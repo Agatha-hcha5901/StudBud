@@ -2,7 +2,7 @@
 /* Navigation */
 nav {
 	grid-area: nav;
-	background: #37474F;
+	background: rgba(188, 233, 255, 0.596);
 	padding-top: 1em;
 }
 
@@ -16,12 +16,12 @@ nav ul {
 nav ul li a {
 	display: block;
 	padding: 0.5rem 1rem;
-	color: white;
+	color: rgb(0, 0, 0);
 	text-decoration: none;
 	transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-	color: rgb(150, 203, 230);
-	text-decoration: underline;
+	color: rgba(153, 230, 150, 0.658);
+	text-decoration: underline overline wavy rgba(0, 0, 255, 0.247);
 }
