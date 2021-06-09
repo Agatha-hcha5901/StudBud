@@ -3,17 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>StudBud by DesCo</title>
+    <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    	<header>
-		<h1>StudBud</h1>
-    	<!-- NAVIGATION -->
-	<nav>
+  <nav>
 		<ul>
 			<li><a href="#tasklist">Task List</a></li>
 			<ul>
+
 				<li><a href="#stopwatchtimer">Stopwatch Timer</a></li>
 				<li><a href="#musicplayer">Music Player</a></li>
 			</ul>
@@ -26,12 +23,49 @@
 	</nav>
 
       <h2 id="tasklist">Task List</h2>
-      <h2 id="stopwatchtimer">Stopwatch Timer</h2>
+  <body>
+    <form id="taskform">
+      <label for="task">Task:</label>
+      <input type="text" name="task" id="taskInput">
+
+      <br>
+    <!-- Date input -->
+      <label for="dueDate">Due Date: </label>
+      <input type="date" name="dueDate" id="dueDateInput">
+      <br>
+    <!-- Time input -->
+    <label for="completionTime">Completion Time: </label>
+      <input type="time" name="completionTime" id="completionTimeInput">
+
+      <br>
+
+    <label for="estimatedTime">Estimated completion time (in mins):</label>
+    <input type="number" name="estimatedTime" id="estimatedTimeInput">
+    <!-- Priority -->
+    <br>
+
+    <label for="priority">Task Priority:</label>
+    <select name="prority" id="priorityInput">
+      <option value="">Select one</option>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+
+    <br>
+
+      <button type="submit">Submit</button>
+
+    </form>
+    <ul id="tasklist">
+    </ul>
+          <h2 id="stopwatchtimer">Stopwatch Timer</h2>
        <p id = "output" class = "text-center"></p>
   <div id = "controls" class = "text-center">
     <button class="btn btn-default" id = "startPause" onclick = "startPause()">START</button>
     <button class="btn btn-default" onclick = "reset()">RESET</button>
-      <h2 id="musicplayer">Music Player</h2>
+
+         <h2 id="musicplayer">Music Player</h2>
       <h2 id="coveyquadrants">Covey Quadrants</h2>
       <h2 id="pomodorotimer">Pomodoro Timer</h2>
           <!--pomodoro-app-->
@@ -55,5 +89,8 @@
       <h2 id="acronymmaker">Acronym Maker</h2>
 	</header>
     <script src="script.js"></script>
+ 
+    <!-- Swap the scripts to see the working solution -->
+    <!-- <script src="solution.js"></script> -->
   </body>
 </html>

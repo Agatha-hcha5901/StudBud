@@ -1,40 +1,25 @@
 
-/* Navigation */
-/*nav {
-	grid-area: nav;
-	background: rgba(188, 233, 255, 0.596);
-	padding-top: 1em;
-}
 
-nav ul {
-	max-width: 200px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav ul li a {
-	display: block;
-	padding: 0.5rem 1rem;
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-	transition: all 0.3s ease;
-}*/
-
-/*nav ul li a:hover {
+/*Here goes the Navigation bar. It is supposed to be sticky. Sometimes it works sometimes it doesn't and I have no idea why?*/
+nav ul li a:hover {
 	color: rgba(153, 230, 150, 0.658);
-	text-decoration: underline overline wavy rgba(0, 0, 255, 0.247);
-}*/
+	text-decoration: underline overline wavy rgba(156, 156, 212, 0.247);
+}
+#nav{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+  background-color: rgba(20, 220, 143, 0.473);
+  box-shadow: 10px 10px 5px #1C1C1C;
 }
 
 li {
@@ -50,9 +35,9 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #666;
 }
 
 .active {
-  background-color: #4CAF50;
+	background-color: #444;
 }
