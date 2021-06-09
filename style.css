@@ -1,6 +1,6 @@
 
 /* Navigation */
-nav {
+/*nav {
 	grid-area: nav;
 	background: rgba(188, 233, 255, 0.596);
 	padding-top: 1em;
@@ -19,9 +19,40 @@ nav ul li a {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
 	transition: all 0.3s ease;
-}
+}*/
 
-nav ul li a:hover {
+/*nav ul li a:hover {
 	color: rgba(153, 230, 150, 0.658);
 	text-decoration: underline overline wavy rgba(0, 0, 255, 0.247);
+}*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
 }
