@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>studBud</title>
+   <!-- favicon --> 
+<link rel="shortcut icon" type="image/png" href="images/studbud.png" >
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   	<div id="nav">
@@ -22,8 +24,9 @@
 		</ul>
 	 </div>
 
-      <h2 id="tasklist">Task List</h2>
   <body>
+    <!--task list-->
+    <h2 id="tasklist">Task List</h2>
     <form id="taskform">
       <label for="task">Task:</label>
       <input type="text" name="task" id="taskInput">
@@ -68,9 +71,10 @@
          <h2 id="musicplayer">Music Player</h2>
       <h2 id="coveyquadrants">Covey Quadrants</h2>
       <h2 id="pomodorotimer">Pomodoro Timer</h2>
-          <!--pomodoro-app-->
+
+          <!--pomodoro-maker-->
     <div id="pomodoro-app">
-  <div id="container">
+    <div id="container">
     <div id="timer">
       <div id="time">
         <span id="minutes">25</span>
@@ -85,12 +89,14 @@
       <button id="shortBreak">Short Break</button>
       <button id="longBreak">Long Break</button>
       <button id="stop">Stop</button>
-
+       
+       <!--acronym maker-->
       <h2 id="acronymmaker">Acronym Maker</h2>
+      <label for="task">Words or concepts you are trying to remember:</label>
+      <input type="text" name="task" id="taskInput">
+      <button type="submit">Submit</button>
 	</header>
     <script src="script.js"></script>
  
-    <!-- Swap the scripts to see the working solution -->
-    <!-- <script src="solution.js"></script> -->
   </body>
 </html>
