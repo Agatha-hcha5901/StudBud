@@ -1,12 +1,6 @@
 /*CSS code of pomodoro timer*/
 #container{
-  /*border:1px solid rgb(255, 255, 255);
-  border-radius :20px;
-  width:400px;
-  margin:20px auto;
-  padding:20px;*/
   text-align:center;
-  /*background : linear-gradient(120deg, #ffe1f7 0%, #d3e3ff 100%);*/
 }
 
 h2 {
@@ -15,10 +9,10 @@ h2 {
 }
 
 #timer{ 
-  color:linear-gradient(120deg, #ffe1f7 0%, #d3e3ff 100%);; 
+  color:rgb(0, 0, 0); 
   font-size:50px; 
   margin:10px auto;
-  border : 5px solid red;
+  border : 5px solid rgba(0, 238, 255, 0.473);
   border-radius:50%;
   width:200px;
   height:200px;

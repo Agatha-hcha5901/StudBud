@@ -1,10 +1,36 @@
 body {
-  background-image: linear-gradient(to bottom right, rgb(198, 255, 250), rgb(255, 255, 173));
+  background-image: linear-gradient(to bottom right, rgb(198, 255, 250), rgb(176, 213, 255));
 }
 
 h1 {
   
   text-align:center;
+}
+h2 {
+ background: -webkit-linear-gradient(#c695ff, #ffc476);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*code for the submit that doesn't work*/
+
+.submit{
+  background:#4da6ff; 
+  border:none; 
+  color:#fff; 
+  cursor:pointer; 
+  padding:5px; 
+  width:90px; 
+  margin:10px auto;
+  font-size:14px;
+  height : 50px;
+  border-radius : 50px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h3 {
@@ -35,7 +61,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(20, 220, 143, 0.473);
+  background-color: rgba(255, 255, 255, 0.219);
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.541);
 }
 
@@ -45,13 +71,16 @@ li {
 
 li a {
   display: block;
-  color: white;
+  background: -webkit-linear-gradient(#bd84ff, #ffc9aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
+  text-decoration: underline overline wavy rgba(62, 62, 238, 0.247);
   background-color: #666;
 }
 
@@ -147,7 +176,7 @@ transition: opacity .2s;
 appearance: none;
 width: 15px;
 height: 15px;
-background: rgba(0, 247, 255, 0.493);
+background: rgba(255, 251, 0, 0.568);
 cursor: pointer;
 border-radius: 50%;
 }
@@ -185,3 +214,25 @@ i.fa-step-backward {
 cursor: pointer;
 }
 
+
+/*TaskList css*/
+#task-grid{
+  display: grid;
+  grid-template-columns: 1 fr 1 fr;
+  grid-template-rows: 1 fr;
+  grid-template-areas: "taskform tasklist";
+}
+
+#taskform{
+  grid-area: taskform;
+  max-width: 300px;
+  margin: 0 auto;
+  label {
+    display: block;
+    width: 100%
+  }
+}
+
+#tasklist{
+  grid-area: tasklist;
+}

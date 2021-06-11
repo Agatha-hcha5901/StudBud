@@ -6,17 +6,17 @@ function startPause() {
     if (running == 0) {
         running = 1;
         increment();
-        document.getElementById("startPause").innerHTML = "PAUSE";
+        document.getElementById("startPause").innerHTML = "Pause";
     } else {
         running = 0;
-        document.getElementById("startPause").innerHTML = "RESUME";
+        document.getElementById("startPause").innerHTML = "Resume";
     }
 }
 
 function reset(){
     running = 0;
     time = 0;
-    document.getElementById("startPause").innerHTML = "START";
+    document.getElementById("startPause").innerHTML = "Start";
     document.getElementById("output").innerHTML = "00:00:00";
 }
 

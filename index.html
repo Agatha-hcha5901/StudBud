@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <!-- I tried...-->
     <title>studBud</title>
    <!-- favicon --> 
 <link rel="shortcut icon" type="image/png" href="studbud.png" >
@@ -16,8 +17,6 @@
 			<li><a href="#tasklist">Task List</a></li>
 				<li><a href="#stopwatchtimer">Stopwatch Timer</a></li>
 				<li><a href="#musicplayer">Music Player</a></li>
-
-			<li><a href="#coveyquadrants">Covey Quadrants</a></li>
 				<li><a href="#pomodorotimer">Pomodoro Timer</a></li>
 				<li><a href="#acronymmaker">Acronym Maker</a></li>
 	 </div>
@@ -25,7 +24,10 @@
   <body>
     <img src="studbud.png">
     <h1>StudBud</h1>
-    <h3>You'd better start NOW</h3>
+    <h3>Manage Your Study Sessions</h3>
+    <br>
+    <br>
+    <br>
     <!--task list-->
     <h2 id="tasklist">Task List</h2>
     <form id="taskform">
@@ -59,18 +61,25 @@
     <br>
 
       <button type="submit">Submit</button>
-
+<br>
+    <br>
+    <br>
     </form>
-    <ul id="tasklist">
+    <div id="tasklist">
+      <p id= "emptylist">You have not added any tasks yet</p>
     </ul>
+    <!--Stopwatch Timer-->
           <h2 id="stopwatchtimer">Stopwatch Timer</h2>
        <p id = "output" class = "text-center"></p>
   <div id = "controls" class = "text-center">
-    <button class="btn btn-default" id = "startPause" onclick = "startPause()">START</button>
-    <button class="btn btn-default" onclick = "reset()">RESET</button>
+    <button class="btn btn-default" id = "startPause" onclick = "startPause()">Start</button>
+    <button class="btn btn-default" onclick = "reset()">Reset</button>
+      <br>
+    <br>
+    <br>
 
          <h2 id="musicplayer">Music Player</h2>
-         <!--music player, coding tutorial from geeksforgeeks. However the code still doesn't work -->
+         <!--music player, coding tutorial from geeksforgeeks. However the code flopped as I changed it -->
     <div class="player">
  
     <!-- Define the section for displaying details -->
@@ -113,14 +122,16 @@
   <br>
   <br>
   <br>
-  <!--acronym maker-->
+  <!--acronym maker, the javascript works but in html not yet-->
    <h2 id="acronymmaker">Acronym 
+     <br>
+  <br>
+  <br>
       <form id ="acronym">
       <label for="words">Words or concepts you are trying to remember:</label>
       <input type="text" name="words" id="acronym">
       <button type="submit">Submit</button>
       </div>
-      <h2 id="coveyquadrants">Covey Quadrants</h2>
       <br>
       <br>
       <br>
