@@ -63,9 +63,10 @@ ul {
 }
 
 li {
-  float: left;
+  float: right;
 }
 
+/*code from gradient headings*/
 li a {
   display: block;
   background: -webkit-linear-gradient(#bd84ff, #ffc9aa);
@@ -76,6 +77,7 @@ li a {
   text-decoration: none;
 }
 
+//hover effects of nav bar
 li a:hover {
   text-decoration: underline overline wavy rgba(62, 62, 238, 0.247);
   background-color: #666;
