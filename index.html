@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>studBud</title>
    <!-- favicon --> 
-<link rel="shortcut icon" type="image/png" href="images/studbud.png" >
+<link rel="shortcut icon" type="image/png" href="studbud.png" >
     <link href="style.css" rel="stylesheet" type="text/css" />
      <link href="timer.css" rel="stylesheet" type="text/css" />
      <link href="pomodoro.css" rel="stylesheet" type="text/css" />
@@ -23,6 +23,9 @@
 	 </div>
 
   <body>
+    <img src="studbud.png">
+    <h1>StudBud</h1>
+    <h3>You'd better start NOW</h3>
     <!--task list-->
     <h2 id="tasklist">Task List</h2>
     <form id="taskform">
@@ -110,7 +113,17 @@
   <br>
   <br>
   <br>
+  <!--acronym maker-->
+   <h2 id="acronymmaker">Acronym 
+      <form id ="acronym">
+      <label for="words">Words or concepts you are trying to remember:</label>
+      <input type="text" name="words" id="acronym">
+      <button type="submit">Submit</button>
+      </div>
       <h2 id="coveyquadrants">Covey Quadrants</h2>
+      <br>
+      <br>
+      <br>
       <h2 id="pomodorotimer">Pomodoro Timer</h2>
       <!--pomodoro-maker-->
     <div id="pomodoro-app">
@@ -129,13 +142,8 @@
       <button id="shortBreak">Short Break</button>
       <button id="longBreak">Long Break</button>
       <button id="stop">Stop</button>
+       </div>
        
-       <!--acronym maker-->
-      <h2 id="acronymmaker">Acronym Maker</h2>
-      <form id ="acronym">
-      <label for="words">Words or concepts you are trying to remember:</label>
-      <input type="text" name="words" id="acronym">
-      <button type="submit">Submit</button>
 	</header>
     <script src="tasklist.js"></script>
     <script src="acronym.js"></script>

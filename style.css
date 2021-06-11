@@ -2,6 +2,16 @@ body {
   background-image: linear-gradient(to bottom right, rgb(198, 255, 250), rgb(255, 255, 173));
 }
 
+h1 {
+  
+  text-align:center;
+}
+
+h3 {
+  
+  text-align:center;
+}
+
 html {
   font-family: 'Dosis', sans-serif;
   font-variant: small-caps
@@ -68,6 +78,7 @@ margin-top: 25px;
 
 /*Code of music player. tutorial from geeksforgeeks*/
 /* Changing the font sizes to suitable ones */
+
 .now-playing {
 font-size: 1rem;
 }
