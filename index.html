@@ -3,14 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <!-- I tried...-->
+    <!-- I tried...the features don't work well...
+    iteration:
+    1)The nav-bar. In the prototyp its just button and when the user clicks it, it expands. Now it is a sticky nav-bar with all the features shown straight-forwardly.
+    2)The theme colour. Replaced the "go-away green" with blue and green gradient. The original green I have chosen makes people doze off...
+    3) Tried...TRIED to animate some features like the pomodorotimer(followed online tuts on animating clocks). Use animates to indicate time-pass instead of just numbers.
+    -->
     <title>studBud</title>
    <!-- favicon --> 
 <link rel="shortcut icon" type="image/png" href="studbud.png" >
+    <!-- style sheet for task list and the whole web app --> 
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- style sheet for timer --> 
      <link href="timer.css" rel="stylesheet" type="text/css" />
+     <!-- style sheet for pomodoro-app --> 
      <link href="pomodoro.css" rel="stylesheet" type="text/css" />
+
   </head>
+  <!-- navigation bar --> 
   	<div id="nav">
 		<ul>
       <ul>
@@ -22,13 +32,14 @@
 	 </div>
 
   <body>
+    <!-- homepage --> 
     <img src="studbud.png">
     <h1>StudBud</h1>
     <h3>Manage Your Study Sessions</h3>
     <br>
     <br>
     <br>
-    <!--task list-->
+    <!--task list, when you input something in TASK and press submit, you will see nothing besides grid changes and an enpty button. However, as you highlight it with your mouse, you can (weirdly) see your input and the "delete item" of the empty button. Any idea why??????????????????????????????-->
     <h2 id="tasklist">Task List</h2>
     <form id="taskform">
       <label for="task">Task:</label>
@@ -79,7 +90,7 @@
     <br>
 
          <h2 id="musicplayer">Music Player</h2>
-         <!--music player, coding tutorial from geeksforgeeks. However the code flopped as I changed it -->
+         <!--music player, coding tutorial from geeksforgeeks. However the code flopped as I change it -->
     <div class="player">
  
     <!-- Define the section for displaying details -->
@@ -93,13 +104,13 @@
     <!-- Define the section for displaying track buttons -->
     <div class="buttons">
       <div class="prev-track" onclick="prevTrack()">
-        <i class="fa fa-step-backward fa-2x"></i>
+        <i class="2.png"></i>
       </div>
       <div class="playpause-track" onclick="playpauseTrack()">
-        <i class="fa fa-play-circle fa-5x"></i>
+        <i class="play.png"></i>
       </div>
       <div class="next-track" onclick="nextTrack()">
-        <i class="fa fa-step-forward fa-2x"></i>
+        <i class="3.png"></i>
       </div>
     </div>
        <!-- Define the section for displaying the seek slider-->

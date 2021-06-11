@@ -3,7 +3,6 @@
 // Select all the elements in the HTML page
 // and assign them to a variable
 let now_playing = document.querySelector(".now-playing");
-//let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".track-name");
 let track_artist = document.querySelector(".track-artist");
  
@@ -53,8 +52,6 @@ function loadTrack(track_index) {
   curr_track.load();
  
   // Update details of the track
-  //track_art.style.backgroundImage =
-    // "url(" + track_list[track_index].image + ")";
   track_name.textContent = track_list[track_index].name;
   track_artist.textContent = track_list[track_index].artist;
   now_playing.textContent =
@@ -91,7 +88,7 @@ function playTrack() {
   isPlaying = true;
  
   // Replace icon with the pause icon
-  playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+  playpause_btn.innerHTML = '<i class="play.png"></i>';
 }
  
 function pauseTrack() {
@@ -100,7 +97,7 @@ function pauseTrack() {
   isPlaying = false;
  
   // Replace icon with the play icon
-  playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';;
+  playpause_btn.innerHTML = '<i class="2.png"></i>';;
 }
 function nextTrack() {
   // Go back to the first track if the
@@ -169,4 +166,4 @@ function seekUpdate() {
 }
 
 // Load the first track in the tracklist
-//loadTrack(track_index);
+loadTrack(track_index);
