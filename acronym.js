@@ -57,7 +57,7 @@ z: "ZERO"
 var wordInput = document.getElementbyId("acronym"); 
 
 wordInput.addEventListener("submit", function(event){
-  let word = wordInput.value
+  let word = wordInput.value;
 }
 
 function makeName(str){

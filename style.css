@@ -1,10 +1,17 @@
+body {
+  background-image: linear-gradient(to bottom right, rgb(198, 255, 250), rgb(255, 255, 173));
+}
 
+html {
+  font-family: 'Dosis', sans-serif;
+  font-variant: small-caps
+}
 
 /*Here goes the Navigation bar. It is supposed to be sticky. Sometimes it works sometimes it doesn't and I have no idea why?*/
-nav ul li a:hover {
+/*nav ul li a:hover {
 	color: rgba(153, 230, 150, 0.658);
-	text-decoration: underline overline wavy rgba(156, 156, 212, 0.247);
-}
+	text-decoration: underline overline wavy rgba(62, 62, 238, 0.247);
+}*/
 #nav{
 	position: -webkit-sticky;
 	position: sticky;
