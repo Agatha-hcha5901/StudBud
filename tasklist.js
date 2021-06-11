@@ -1,5 +1,3 @@
-
-/*tasklist*/
 const form = document.getElementById("taskform");
 const button = document.querySelector("#taskform > button")
 var taskInput = document.getElementById("taskInput");
@@ -43,7 +41,7 @@ function addTask(taskDescription, dueDate, estimatedTime, priorityRating, comple
 function renderTask(task){
   // Create HTML elements
   let item = document.createElement("li");
-  item.innerHTML = "<p>" + task.taskDescription "</p>";
+  item.innerHTML = "<p>" + task.taskDescription + "</p>";
 
   tasklist.appendChild(item);
 

@@ -1,4 +1,4 @@
-/*Acronym Maker*/
+/*Acronym Maker, it doesn't work but some parts of the makeName function are correct*/
 var letters = {
 A: "APE",
 a: "APE",
@@ -54,17 +54,41 @@ Z: "ZERO",
 z: "ZERO"
 }
 
-var wordInput = document.getElementbyId("acronym"); 
+var wordsInput = document.getElementbyId("acronym"); 
 
 wordInput.addEventListener("submit", function(event){
-  let word = wordInput.value;
+  event.preventDefault()
+  let words = wordInput.value;
+  addTask(words, false);
 }
 
-function makeName(str){
+var acronymArray = [];
+
+function makeName(wordsInput){
   var arr = str.split("")
   for(let i=0; i<arr.length; i++){
     arr.splice(i,1,letters[arr[i]])
   }
-  console.log(arr.join(" "))
+  acronymArray.push(words);
+  renderWords(words);
 }
-makeName(word)
+
+let a = makeName(wordsInput)
+
+function renderWords(a){
+  //Create html elements
+  let item = document.createElement("li");
+  item.innerHTML = "<p>" + words.wordsInput + "</p>";
+
+  wordsInput.appendChild(item)
+
+  let delButton = document.createElement("button");
+  let delButtonText = document.createTextNode("Delete task");
+  delButton.appendChild(delButtonText);
+  item.appendChild(delButton);
+
+  delButton.addEventListener("click", function(event)){
+    event.preventDefault();
+    item.remove();
+  }
+}

@@ -12,10 +12,10 @@ h2 {
   color:rgb(0, 0, 0); 
   font-size:50px; 
   margin:10px auto;
-  border : 5px solid rgba(0, 238, 255, 0.473);
+  border : 10px solid rgba(255, 255, 255, 0.541);
   border-radius:50%;
-  width:200px;
-  height:200px;
+  width:300px;
+  height:300px;
   overflow:hidden;
   position:relative;
   -webkit-user-select: none;
@@ -26,21 +26,21 @@ h2 {
 }
 
 #time{
-  margin-top:70px;
+  margin-top:110px;
   z-index : 1;
   position:relative;
 }
 
 #filler{
-  background : #ddffcc;
+  background : #fde3ff;
   height: 0px;
-  width: 200px;
+  width: 300px;
   position:absolute;
   bottom:0;
 }
 
 #buttons button { 
-  background:#4da6ff; 
+  background:#80c0ff; 
   border:none; 
   color:#fff; 
   cursor:pointer; 
@@ -53,13 +53,13 @@ h2 {
 }
 
 #buttons button#shortBreak{
-  background : #0c0;
+  background : rgb(138, 255, 138);
 }
 
 #buttons button#longBreak{
-  background : #080;
+  background : rgb(103, 146, 103);
 }
 
 #buttons button#stop{
-  background : #f00;
+  background : rgb(252, 167, 167);
 }
