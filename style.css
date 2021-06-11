@@ -26,7 +26,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: rgba(20, 220, 143, 0.473);
-  box-shadow: 10px 10px 5px #1C1C1C;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.541);
 }
 
 li {
@@ -136,7 +136,7 @@ transition: opacity .2s;
 appearance: none;
 width: 15px;
 height: 15px;
-background: rgb(212, 108, 108);
+background: rgba(0, 247, 255, 0.493);
 cursor: pointer;
 border-radius: 50%;
 }
